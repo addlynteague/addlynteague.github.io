@@ -33,6 +33,12 @@ body {
 	line-height: 1;
 }
 
+iframe {
+	margin-left: 70px;
+	padding: 40px;
+	border: 0;
+}
+
 ol, ul {
 	list-style: none;
 }
