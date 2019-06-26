@@ -49,28 +49,112 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>FSU Division of Student Affairs</h1>
-							<h2>Web Intern</h2>
+							<h1 style="color:#077D02;">FSU Division of Student Affairs</h1>
+							<h2 style="color:#074382;">Web Intern</h2>
 							<p>Florida State University’s Division of Student Affairs is a network of campus departments and programs that offer resources to help make a student’s experience positive and impactful. At the time (Fall 2017) the school’s digital presence was going through a rebranding process. All of the websites the Division of Student Affairs controlled were to be switched over to its new template on the content management system, Drupal. The website I had the pleasure of switching over was the Oglesby Union!</p>
 							<p>This task took all semester. The Union’s website composed of eight tabs, around 28 sub-tabs, and many more links, files, pictures, and tabs underneath the sub-tabs. As a Web Intern, I would create pages on Drupal, organize them under one another, link pages if needed, copy and paste text, edit the links and files in HTML, download media to the system, and place content in their respected blocks. My past experience with a web design course and using HTML helped me tremendously when I needed to space pictures, create tables, and edit links.</p>
 							<p>The top three pictures are snapshots of what the former Oglesby Union website looked like, including two pictures of the Home page and the History page. The middle row is of the same two pages, but rebranded using Drupal. The last row consists of two extra snapshots of pages on the website. Each include a side tab bar. They also feature a table, Contact block, hyperlinks, and links to forms.</p>
 							<p>To view the new Union website, click <a href="https://union.fsu.edu/" target="_blank">here.</a></p>
 							
-							<section>
-									<div class="box alt">
-										<div class="row gtr-uniform">
-											<div class="col-4"><span class="image fit"><img src="images/ogunion1.PNG" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/ogunion2.PNG" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/ogunion3.PNG" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/ogunion1update.PNG" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/ogunion2update.PNG" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/ogunion3update.PNG" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/ogunion4update.PNG" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/ogunion5update.PNG" alt="" /></span></div>
-										</div>
-									</div>
-				
-							</section>
+							
+														<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 8</div>
+    <img src="images/ogunion1.PNG" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 8</div>
+    <img src="images/ogunion2.PNG" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 8</div>
+    <img src="images/ogunion3.PNG" style="width:100%">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 8</div>
+    <img src="images/ogunion1update.PNG" style="width:100%">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 8</div>
+    <img src="images/ogunion2update.PNG" style="width:100%">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 8</div>
+    <img src="images/ogunion3update.PNG" style="width:100%">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 8</div>
+    <img src="images/ogunion4update.PNG" style="width:100%">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 8</div>
+    <img src="images/ogunion5update.PNG" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+</div>
+
+<script>var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}</script>
 							
 						</div>
 						
@@ -95,7 +179,7 @@
 								</ul>
 							</section>
 							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Addlyn Teague</li><li>All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</footer>
