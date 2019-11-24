@@ -2703,15 +2703,19 @@ input, select, textarea {
 			}
 
 			.tiles article.style4 > .image:before {
-				background-color: #016339;
-			}
-
-			.tiles article.style5 > .image:before {
 				background-color: #8C4100;
 			}
 
-			.tiles article.style6 > .image:before {
+			.tiles article.style5 > .image:before {
 				background-color: #4E9100;
+			}
+
+			.tiles article.style6 > .image:before {
+				background-color: #ED4700;
+			}
+			
+			.tiles article.style7 > .image:before {
+				background-color: #016339;
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
